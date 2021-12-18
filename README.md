@@ -25,7 +25,7 @@ IMAGE_NAME = 'amumu.jpg'
 ```
 
 4. Run the script
-```
+```sh
 python3 image.py
 ```
 
