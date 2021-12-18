@@ -13,7 +13,7 @@ git clone https://github.com/LeoTheBestCoder/HOG_implementation.git
 ```
 2. Install related libraries
 </br>
-```console
+``` 
 pip install opencv-python
 pip install numpy
 pip install matplotlib
