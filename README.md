@@ -34,4 +34,4 @@ python3 image.py
 * Input Image
 ![](amumu.jpg)
 * Segmentation Result
-![](edge.jpg)
+![](amumu_edge.jpg)
