@@ -7,5 +7,7 @@ HOG (Histograms of Oriented Gradients) Algorithm is an algorithm aiming to reali
 Navneet Dalal and Bill Triggs, [Histograms of Oriented Gradients](https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf), *CVPR 2005*
 
 ## Result
-input image
+input image1
 ![](amumu.jpg)
+segmentation result 1
+![](edge.jpg)
