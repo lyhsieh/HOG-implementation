@@ -6,14 +6,13 @@ from copy import deepcopy
 import cv2
 
 
-#### Change your input image name here ####
+#### Change your input image name here (include filename extension)####
 IMAGE_NAME = 'amumu.jpg'
 ###########################################
 
 print('loading image...')
 L = cv2.imread(f'{IMAGE_NAME}', cv2.IMREAD_GRAYSCALE)
 
-cv2.imwrite('origin_gray.jpg', L)
 print('calculating HOG algorithm...')
 ans = deepcopy(L)
 height, width = L.shape
@@ -35,7 +34,7 @@ for i in range(len(L)):
             gx = int(L[i][j + 1]) - int(L[i][j - 1])
         ans[i][j] = sqrt(gx ** 2 + gy ** 2)
 
-cv2.imwrite('output.jpg', ans)
+# cv2.imwrite(f'{IMAGE_NAME[:-4]}_output.jpg', ans)
 ans2 = deepcopy(ans)
 for i in range(len(ans)):
     for j in range(len(ans[i])):
@@ -43,8 +42,8 @@ for i in range(len(ans)):
             ans2[i][j] = 0
         else:
             ans2[i][j] = 255
-cv2.imwrite('edge.jpg', ans2)
-print('finish')
+cv2.imwrite(f'{IMAGE_NAME[:-4]}_edge.jpg', ans2)
+print('Finish')
 # cv2.imshow('edge result', ans2)
 # cv2.waitKey(0)
 # cv2.destroyAllWindows()
