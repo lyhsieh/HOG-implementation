@@ -8,9 +8,12 @@ Navneet Dalal and Bill Triggs, [Histograms of Oriented Gradients](https://lear.i
 
 ## Getting Started
 1. Clone this repository
-``` git clone https://github.com/LeoTheBestCoder/HOG_implementation.git ```
+```
+git clone https://github.com/LeoTheBestCoder/HOG_implementation.git
+```
 2. Install related libraries
-``` pip
+</br>
+``` pip install opencv-python ```
 
 ## Demostration
 * Input Image
