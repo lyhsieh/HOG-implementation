@@ -4,16 +4,20 @@ from matplotlib import pyplot as plt
 from math import sqrt
 from copy import deepcopy
 import cv2
+
+
+#### Change your input image name here ####
+IMAGE_NAME = 'amumu.jpg'
+###########################################
+
 print('loading image...')
-L = cv2.imread('amumu.jpg', cv2.IMREAD_GRAYSCALE)
-# print(L)
+L = cv2.imread(f'{IMAGE_NAME}', cv2.IMREAD_GRAYSCALE)
+
 cv2.imwrite('origin_gray.jpg', L)
-# print(L.shape)
-# print(type(L))
-# print(L.shape)
 print('calculating HOG algorithm...')
 ans = deepcopy(L)
 height, width = L.shape
+
 for i in range(len(L)):
     for j in range(len(L[i])):
         if i == 0:
