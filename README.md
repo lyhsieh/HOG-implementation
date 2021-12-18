@@ -1,0 +1,1 @@
+# HOG Algorithm Implementation
