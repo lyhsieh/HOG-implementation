@@ -19,6 +19,17 @@ pip install numpy
 pip install matplotlib
 ```
 
+3. Put your input image under same directory and change [**line 10**](https://github.com/LeoTheBestCoder/HOG_implementation/blob/b33e8bdb7e9c07d361f420eb00dade209c5dec53/image.py#L10) in **image.py** (include filename extension)
+``` python
+IMAGE_NAME = 'amumu.jpg'
+```
+
+4. Run the script
+```
+python3 image.py
+```
+
+
 ## Demostration
 * Input Image
 ![](amumu.jpg)
