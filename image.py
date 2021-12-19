@@ -35,7 +35,6 @@ for i in range(len(L)):
         ans[i][j] = sqrt(gx ** 2 + gy ** 2)
 
 # cv2.imwrite(f'{IMAGE_NAME[:-4]}_output.jpg', ans)
-
 ans2 = deepcopy(ans)
 for i in range(len(ans)):
     for j in range(len(ans[i])):
