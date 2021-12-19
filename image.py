@@ -8,7 +8,7 @@ import cv2
 
 #### Change your input image name here (include filename extension) ####
 IMAGE_NAME = 'amumu.jpg'
-#########################################################3##############
+########################################################################
 
 print('loading image...')
 L = cv2.imread(f'{IMAGE_NAME}', cv2.IMREAD_GRAYSCALE)
